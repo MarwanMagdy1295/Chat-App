@@ -1,5 +1,6 @@
-import 'package:chat_app/src/app/di_service.dart';
-import 'package:chat_app/src/core/services/prefs_service.dart';
+// ignore_for_file: use_build_context_synchronously
+
+import 'package:chat_app/src/core/services/secure_storge.dart';
 import 'package:chat_app/src/modules/chat_screen/presentation/ui/chat_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -34,7 +35,8 @@ class OtpScreenCubit extends BaseCubit<OtpScreenState>
         final credential = PhoneAuthProvider.credential(
             verificationId: verificationId, smsCode: controller.text);
         await _auth.signInWithCredential(credential);
-        di<PrefsService>().token.put(credential.token.toString());
+        SecureStorage().writeSecureData('token', credential.token.toString());
+        // di<PrefsService>().token.put(credential.token.toString());
         Navigator.pushAndRemoveUntil(
             context,
             MaterialPageRoute(

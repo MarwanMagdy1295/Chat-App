@@ -1,3 +1,4 @@
+import 'package:chat_app/src/core/services/firebase_auth_service.dart';
 import 'package:chat_app/src/modules/auth/otp_screen/presentation/ui/otp_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:chat_app/src/core/base_cubit/base_cubit.dart';
@@ -12,21 +13,20 @@ class LoginScreenCubit extends BaseCubit<LoginScreenState>
     with
         AdaptiveCubit<LoginScreenState>,
         ResetLazySingleton<LoginScreenCubit, LoginScreenState> {
-  final LoginScreenRepository _loginScreenRepository;
-  LoginScreenCubit({required LoginScreenRepository loginRepository})
-      : _loginScreenRepository = loginRepository,
+  final FirebaseAuthService _firebaseAuthService;
+  LoginScreenCubit({required FirebaseAuthService firebaseAuthService})
+      : _firebaseAuthService = firebaseAuthService,
         super(LoginScreenInitial());
 
   TextEditingController phoneController = TextEditingController();
   bool isLoading = false;
   final formKey = GlobalKey<FormState>();
-  final FirebaseAuth _auth = FirebaseAuth.instance;
 
   Future<void> postLoginData(BuildContext context) async {
     if (formKey.currentState!.validate()) {
       isLoading = true;
       emit(LoginScreenLoadingState());
-      await _auth.verifyPhoneNumber(
+      await _firebaseAuthService.auth.verifyPhoneNumber(
         phoneNumber: '+2${phoneController.text}',
         verificationCompleted: (PhoneAuthCredential credential) async {},
         codeSent: (String verificationId, int? resendToken) async {

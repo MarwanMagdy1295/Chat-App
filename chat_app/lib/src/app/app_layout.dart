@@ -1,3 +1,4 @@
+import 'package:chat_app/src/core/services/secure_storge.dart';
 import 'package:chat_app/src/modules/auth/login/presentation/ui/login_screen.dart';
 import 'package:chat_app/src/modules/chat_screen/presentation/ui/chat_screen.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -60,7 +61,9 @@ class AppLayout extends StatelessWidget {
               foregroundColor: AppColors.white,
             ),
           ),
-          home: const LoginScreen(),
+          home: SecureStorage().readSecureData('token') != null
+              ? const ChatScreen()
+              : const LoginScreen(),
         ),
       ),
     );

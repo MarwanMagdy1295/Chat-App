@@ -18,7 +18,8 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (BuildContext context) => LoginScreenCubit(loginRepository: di()),
+      create: (BuildContext context) =>
+          LoginScreenCubit(firebaseAuthService: di()),
       lazy: true,
       child: Builder(
         builder: (context) {

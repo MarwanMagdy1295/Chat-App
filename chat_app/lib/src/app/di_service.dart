@@ -56,7 +56,7 @@ class DiService {
     );
     di.registerLazySingleton(
       () => LoginScreenCubit(
-        loginRepository: di(),
+        firebaseAuthService: di(),
       ),
     );
     // OTPScreen
