@@ -1,0 +1,42 @@
+{
+  "general": {
+    "app_name": "Security Zawahid",
+    "some_thing_went_wrong": "Some thing went wrong",
+    "please_fill_data": "Please fill your data",
+    "please_choose_tenant": "Please fill tenant"
+  },
+  "login_screen": {
+    "login": "Login",
+    "welcome_back": "Welcome Back,",
+    "please_enter_your_data": "Please enter your Data",
+    "tenant_name": "Tenant Name",
+    "user_name": "User Name",
+    "please_enter_user_name": "Please enter your User Name",
+    "phone": "Phone Number",
+    "please_enter_phone": "Please enter your phone number",
+    "phone_valid": "Phone number not valid",
+    "password": "Password",
+    "please_enter_password": "Please enter your password",
+    "forget_password": "Forget Password?"
+  },
+  "forget_password_screen": {
+    "forget_password": "Forget Password",
+    "forget_password_sub_title": "Enter the email address you used when you joined and we’ll send you instructions to reset your password.",
+    "User_name_email": "Email",
+    "send_instructions": "Send Reset Instructions",
+    "send_verification": "We have sent a verification code to ",
+    "verify_email": "Verify email",
+    "recive_email": "Didn’t receive the email?",
+    "resend": "Click to resend",
+    "back_to_login": "Back to log in",
+    "please_enter_email": "Please enter your email"
+  },
+  "otp_screen": {
+    "please_enter_code": "Please enter verfication code"
+  },
+  "chat_screen": {
+    "on_line": "On line",
+    "last_seen_recently": "Last seen recently",
+    "type_a_message": "Type a message"
+  }
+}

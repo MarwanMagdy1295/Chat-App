@@ -1,0 +1,42 @@
+{
+  "general": {
+    "app_name": "Security Zawahid",
+    "some_thing_went_wrong": "حدث خطأ",
+    "please_fill_data": "رجاء ً قم بملء البيانات",
+    "please_choose_tenant": "رجاء ً إختر مؤسستك"
+  },
+  "chat_screen": {
+    "on_line": "متصل",
+    "last_seen_recently": "متصل مؤخرًا",
+    "type_a_message": "اكتب رسالة"
+  },
+  "login_screen": {
+    "login": "تسجيل الدخول",
+    "welcome_back": "أهلاً بك",
+    "please_enter_your_data": "من فضلك أدخل بياناتك",
+    "user_name": "أسم المستخدم",
+    "tenant_name": "اسم المؤسسة",
+    "please_enter_user_name": "أدخل اسم المستخدم",
+    "phone": "رقم الجوال",
+    "please_enter_phone": "من فضلك أدخل رقم الجوال",
+    "phone_valid": "رقم الجوال غير صحيح",
+    "password": "كلمة المرور",
+    "please_enter_password": "ادخل كلمة المرور ",
+    "forget_password": "نسيت كلمة المرور؟"
+  },
+  "forget_password_screen": {
+    "forget_password": "نسيت كلمة المرور",
+    "forget_password_sub_title": "أدخل عنوان البريد الإلكتروني الذي استخدمته عند الانضمام وسنرسل لك تعليمات لإعادة تعيين كلمة المرور الخاصة بك.",
+    "User_name_email": " البريد الالكتروني",
+    "send_instructions": "أرسل تعليمات التعديل",
+    "verify_email": "تأكيد البريد الالكتروني",
+    "recive_email": "لم تستلم البريد الالكتروني",
+    "resend": "إعادة الارسال",
+    "back_to_login": "الرجوع إلى تسجيل الدخول",
+    "send_verification": "لقد تم إرسال كود التحقق إلي",
+    "please_enter_email": "ادخل البريد الالكتروني "
+  },
+  "otp_screen": {
+    "please_enter_code": "من فضلك أدخل الكود"
+  }
+}
