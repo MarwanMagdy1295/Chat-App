@@ -39,17 +39,20 @@ class ChatScreen extends StatelessWidget {
               floatingActionButtonLocation:
                   FloatingActionButtonLocation.endDocked,
               floatingActionButton: InputTextField(cubit: cubit),
-              body: const Column(
+              body: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  SenderMassege(
+                  Constatnts.height10,
+                  const SenderMassege(
                     massege: '',
                     time: '',
                   ),
-                  ReciverMassege(
+                  Constatnts.height10,
+                  const ReciverMassege(
                     massege: '',
                     time: '',
                   ),
+                  Constatnts.height10,
                 ],
               ),
             ),
